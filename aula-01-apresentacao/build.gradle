@@ -1,0 +1,5 @@
+
+task buildarJava () {
+	println("Buildando o java...")
+	println("eh diretorio? ${new File("/tmp/").isFile()}")
+}
