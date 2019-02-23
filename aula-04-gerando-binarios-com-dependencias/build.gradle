@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+}
+
+mainClassName = 'Main'
