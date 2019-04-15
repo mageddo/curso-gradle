@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+task debug(type: JavaExec) {
+    debug = true
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'aula.debugando.remoto.App'
+}
+
+test {
+    exclude '**/*IntTest.class'
+}
+
+task intTest(type: Test){
+    include '**/*IntTest.class'
+    failFast = true
+}
