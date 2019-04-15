@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+task debug(type: JavaExec) {
+    debug = true
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'aula.debugando.remoto.App'
+}
