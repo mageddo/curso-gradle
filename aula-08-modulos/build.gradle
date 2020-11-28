@@ -21,10 +21,6 @@ subprojects {
     }
 }
 
-project(":loja-api"){
-    mainClassName = "MainApi"
-}
-
 project(":loja-async"){
     mainClassName = "MainAsync"
 }
